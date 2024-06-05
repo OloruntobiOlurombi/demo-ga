@@ -21,7 +21,7 @@ jobs:
     - name: Code Checkout 
       uses: actions/checkout@v4 
     - name: Install Apache2 
-      run: apt update && apt install apache2 -y 
+      run: sudo apt update && apt install apache2 -y 
     - name: List Directory Structure 
       run: ls -l /
     needs:
